@@ -27,6 +27,10 @@ class String
   end
 
   def count_sentences
-  
+    count = 0
+    if self.sentences? == true 
+      count += 1
+    end
+    count
   end
 end
