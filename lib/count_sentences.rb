@@ -11,14 +11,25 @@ class String
   end
 
   def question?
-
+    if self[-1] == "?"
+      true
+    else
+      false
+    end
   end
 
   def exclamation?
-
+    if self[-1] == "!"
+      true
+    else
+      false
+    end
   end
 
   def count_sentences
-
+    count = 0
+    if self.sentences? == true 
+      count += 1
   end
+  count
 end
