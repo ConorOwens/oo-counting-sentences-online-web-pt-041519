@@ -30,10 +30,13 @@ class String
    count = 0 
    if (self.split(".").length -1) > 0 
      count += self.split(".").length - 1
+   end
    if (self.split("?").length -1) > 0 
      count += self.split("?").length - 1
+   end
    if (self.split("!").length -1) > 0 
      count += self.split("!").length - 1
+   end
    count
   end
 end
