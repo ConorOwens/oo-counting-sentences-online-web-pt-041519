@@ -27,16 +27,8 @@ class String
   end
 
   def count_sentences
-   count = 0 
-   if self.split(".").length > 0 
-     count += self.split(".").length - 1
-   end
-   if self.split("?").length > 0 
-     count += self.split("?").length - 1
-   end
-   if self.split("!").length > 0 
-     count += self.split("!").length - 1
-   end
-   count
+   sentences = self.split(/[,?!]/)
+   sentences.delete_if(|x| x.empty?)
+   sentences
   end
 end
