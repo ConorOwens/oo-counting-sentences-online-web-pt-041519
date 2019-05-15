@@ -31,4 +31,5 @@ class String
     if self.sentences? == true 
       count += 1
     count
+  end
 end
