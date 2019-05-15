@@ -30,6 +30,5 @@ class String
     count = 0
     if self.sentences? == true 
       count += 1
-  end
-  count
+    count
 end
