@@ -27,10 +27,7 @@ class String
   end
 
   def count_sentences
-    count = 0
-    if self.sentence? == true 
-      count += 1
-    end
-    count
+   count = self.split(".").length
+   count
   end
 end
